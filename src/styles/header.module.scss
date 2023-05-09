@@ -1,6 +1,7 @@
 .navbar {
     position: fixed;
     width: 100%;
+    z-index: 100;
     a {
         text-decoration: none;
     }
@@ -10,16 +11,17 @@
         justify-content: space-around;
         background: #85C5B9;
         height: 60px;
+        padding: 0 20px;
     }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1078px) {
     .btn_animate {
       display: none;
     }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1078px) {
     .navbar nav {
         justify-content: flex-start;
     }
@@ -27,6 +29,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
+        padding-right: 20px;
     }
 }
 
@@ -34,12 +37,12 @@
     display: flex;
     list-style: none;
     li:not(:first-child) {
-        padding-left: 25px;
+        padding-left: 20px;
       }
     a {
         color: #FFFFFF;
     }
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 1078px) {
         display: none;
     }
 }
@@ -78,7 +81,7 @@
       border-bottom: 1px solid #FFFFFF;
     }
   
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: 1078px) {
       display: none;
     }
 }

@@ -1,9 +1,22 @@
+@font-face {
+  font-family: 'mark_otthin';
+  src: url('../assets/fonts/markot-thin-webfont.woff2') format('woff2'),
+       url('../assets/fonts/markot-thin-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .navbar {
     position: fixed;
     width: 100%;
     z-index: 100;
     a {
         text-decoration: none;
+        font-family: 'mark_otthin';
+        font-size: 14px;
+    }
+    a:hover {
+      opacity: 0.5;
     }
     nav {
         display: flex;
@@ -88,6 +101,7 @@
 
 .cart_content {
     display: flex;
+    align-items: center;
     img {
         margin-left: 20px;
     }

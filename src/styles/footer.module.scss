@@ -1,3 +1,19 @@
+@font-face {
+    font-family: 'mark_otbold';
+    src: url('../assets/fonts/markot-bold-webfont.woff2') format('woff2'),
+         url('../assets/fonts/markot-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mark_otbook';
+    src: url('../assets/fonts/markot-book-webfont.woff2') format('woff2'),
+         url('../assets/fonts/markot-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .question_content {
     display: flex;
     flex-direction: column;
@@ -11,6 +27,9 @@
         border-bottom: 2px solid #C4C4C4;
         cursor: pointer;
         p {
+            font-family: 'mark_otbook';
+            font-size: 18px;
+            color: #47929C;
             width: 402px;
             margin: 20px 0px;
         }
@@ -29,12 +48,17 @@
         margin: 40px 0;
     }
     button {
+        font-family: 'mark_otbold';
+        font-size: 26px;
         height: 60px;
         width: 330px;
         background: #F09291;
         border-radius: 10px;
         border: none;
         cursor: pointer;
+    }
+    button:hover {
+        opacity: 0.5;
     }
     @media screen and (max-width: 510px) {
         .questions {
@@ -43,6 +67,12 @@
         p {
             width: 300px !important;
         }
+    }
+    h3 {
+        font-family: 'mark_otbook';
+        font-size: 28px;
+        color: #47929C;
+        font-weight: 500;
     }
 }
 

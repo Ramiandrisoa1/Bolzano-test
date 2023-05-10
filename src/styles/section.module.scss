@@ -1,3 +1,27 @@
+@font-face {
+    font-family: 'mark_otbold';
+    src: url('../assets/fonts/markot-bold-webfont.woff2') format('woff2'),
+         url('../assets/fonts/markot-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mark_otbook';
+    src: url('../assets/fonts/markot-book-webfont.woff2') format('woff2'),
+         url('../assets/fonts/markot-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mark_otregular';
+    src: url('../assets/fonts/markot-webfont.woff2') format('woff2'),
+         url('../assets/fonts/markot-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 section {
     padding-top: 60px;
 }
@@ -7,7 +31,6 @@ section {
     background: black !important;
     position: relative;
     height: 787px;
-    color: #FFFFFF;
     img {
         height: 100%;
         width: 100% !important;
@@ -23,10 +46,16 @@ section {
         right: 100px;
         border-radius: 10px;
         padding: 0 20px !important;
-        p, h1 {
+        h1 {
+            font-family: "mark_otregular" !important;
+            font-size: 32px !important;
+            color: #FFFFFF !important;
             margin: 0;
         }
         p {
+            color: #FFFFFF !important;
+            font-size: 16px;
+            margin: 0;
             padding: 0 !important;
         }
     }
@@ -58,6 +87,8 @@ section {
         margin: 20px 0 40px;
     }
     button {
+        font-family: 'mark_otbold';
+        font-size: 24px;
         height: 60px;
         width: 330px;
         background: #F09291;
@@ -75,14 +106,26 @@ section {
         justify-content: center;
         h1 {
             text-align: center;
+            font-family: 'mark_otbook';
+            font-weight: 500;
+            color: #47929C;
+            font-size: 40px;
+            margin: 20px 0 0;
         }
         p, ul, h2 {
             padding: 0 100px;
         }
-        p:first-child {
-            font-weight: bold;
-            font-size: 1.2em;
-           }
+        h2 {
+            font-family: 'mark_otbold';
+            font-size: 28px;
+            color: #47929C;
+            margin: 0;
+        }
+        p {
+            font-family: "mark_otregular";
+            font-size: 18px;
+            color: #535353;
+        }
     }
     @media screen and (max-width: 1078px) {
         flex-direction: column;
@@ -112,6 +155,8 @@ section {
         margin: 20px 0 40px;
     }
     button {
+        font-family: 'mark_otbold';
+        font-size: 24px;
         height: 60px;
         width: 330px;
         background: #F09291;
@@ -127,11 +172,22 @@ section {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        justify-content: space-evenly;
         h1 {
             text-align: center;
+            font-family: 'mark_otbook';
+            font-weight: 500;
+            color: #47929C;
+            font-size: 40px;
+            margin: 20px 0 0;
         }
         p, ul, h2 {
             padding: 0 100px;
+        }
+        p {
+            font-family: "mark_otregular";
+            font-size: 18px;
+            color: #535353;
         }
     }
     @media screen and (max-width: 1078px) {
@@ -157,7 +213,13 @@ section {
         color: green;
         font-weight: bold;
         display: inline-block;
-      }
+    }
+    li {
+        margin: 10px 0;
+        font-family: 'mark_otregular';
+        font-size: 18px;
+        color: #535353;
+    }
 }
 
 @media screen and (max-width: 1078px) {

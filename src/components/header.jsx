@@ -1,14 +1,13 @@
 
 import React from 'react';
 import styles from '../styles/header.module.scss';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import CartIcon from "../assets/icons/Cart-icon.svg";
 import Logo from "../assets/icons/Logo.svg";
 
 export const Header = () => {
+    
     const [show, setShow] = useState(false)
-    useEffect(() => {
-    })
 
     const showNav = (event) => {
         event.preventDefault()

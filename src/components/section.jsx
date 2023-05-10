@@ -8,7 +8,6 @@ import image3 from "../assets/images/our-mission.jpg";
 export const Section = () => {
 
     const [allSection, setSection] = useState([]);
-    const [allQuestion, setQuestion] = useState([]);
     
     useEffect(()=> {
         const sections = [
@@ -59,47 +58,8 @@ export const Section = () => {
                 image: image1
             }
         ]
-    
-        const questions = [
-            {
-                option: `What is baby sleep training?`,
-            },
-            {
-                option: `Does the Lumi Smart Sleep Coach app work?`,
-            },
-            {
-                option: `I don't have time to track manually, is there an alternative?`,
-            },
-            {
-                option: `Is sleep training sage for my baby`,
-            },
-            {
-                option: `Are there multiple sleep training methods to choose from?`,
-            },
-            {
-                option: `How long does it take for my baby's sleep to improve?`,
-            },
-            {
-                option: `When can I start training my baby to sleep with the Lumi Smart Sleep Coach?`,
-            },
-            {
-                option: `Can I grant app access to other people who care for my baby?`,
-            },
-            {
-                option: `Is it too late to sleep train my baby?`,
-            },
-            {
-                option: `How long will I have access?`,
-            },
-            {
-                option: `Can I cancel my plan?`,
-            },
-        ]
         setSection(sections);
-        setQuestion(questions);
     }, [])
-
-    console.log(allQuestion);
 
     return (
         <section>

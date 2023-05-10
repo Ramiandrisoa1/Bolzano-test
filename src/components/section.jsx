@@ -70,13 +70,14 @@ export const Section = () => {
                         <div className={styles.title_content}>
                             <h1>{row.title}</h1>
                             <p>{row.comment}</p>
-                            <ul>
-                                {row.list && row.list.length > 0 && row.list.map((info) => (
-                                    <React.Fragment key={info.id}>
-                                        <li>{info.information}</li>
-                                    </React.Fragment>
-                                ))}
-                            </ul>
+                            {row.list && row.list.length > 0 &&
+                                <ul>
+                                    {row.list.map((info) => (
+                                        <React.Fragment key={info.id}>
+                                            <li>{info.information}</li>
+                                        </React.Fragment>
+                                    ))}
+                                </ul>}
                             {row.info && <h2>Zzzzz your baby sleeps!</h2>}
                             <div className={styles.button}>
                                 <button>{row.label}</button>

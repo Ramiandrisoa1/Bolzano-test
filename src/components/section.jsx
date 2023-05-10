@@ -46,20 +46,35 @@ export const Section = () => {
             {
                 id: 3,
                 title: `Our mission`,
-                comment: `We're on a mission to make it easy for every familly to sleep better. We apply state-of-the-art technology to science-based sleep understanding so that we can make quality, credible sleep support accessible to everyone - because every baby and their family deserve better sleep!`,
+                comment: `We're on a mission to make it easy for every familly to sleep better. We apply state-of-the-art technology to science-based sleep understanding so that we can make quality, credible sleep support accessible to everyone - because every baby and their family deserve better sleep.`,
                 label: `UNLOCK BETTER SLEEP`,
                 image: image3
             },
             {
                 id: 4,
                 title: `Lumi is designed for`,
-                comment: `Every parent who wants their baby to fall asleep, stay asleep, and wake up happy in the morning. Whether you're doing what's best for your family, we have you covered.`,
+                comment: `Every parent who wants their baby to fall asleep, stay asleep, and wake up happy in the morning. Whether you're struggling with sleep or simply making sure your're doing what's best for your family, we have you covered.`,
                 label: `GET STARTED`,
                 image: image1
             }
         ]
         setSection(sections);
     }, [])
+
+    const splite = (event) => {
+        const comment = event.split(".");
+        return (
+            <>
+                <strong>{comment[0]}.</strong>
+                {comment.map((row, index) => (
+                    index > 0 &&
+                        <React.Fragment key={index}>
+                            {row}
+                        </React.Fragment>)
+                )}
+            </>
+        )
+    }
 
     return (
         <section>
@@ -69,12 +84,18 @@ export const Section = () => {
                         <img src={row.image} alt="" />
                         <div className={styles.title_content}>
                             <h1>{row.title}</h1>
-                            <p>{row.comment}</p>
+                            <React.Fragment>
+                                <p>
+                                    {splite(row.comment)}
+                                </p>
+                            </React.Fragment>
                             {row.list && row.list.length > 0 &&
                                 <ul>
                                     {row.list.map((info) => (
                                         <React.Fragment key={info.id}>
-                                            <li>{info.information}</li>
+                                            <li>
+                                                {splite(info.information)}
+                                            </li>
                                         </React.Fragment>
                                     ))}
                                 </ul>}

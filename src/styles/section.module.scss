@@ -64,6 +64,9 @@ section {
         bottom: -120px;
         margin: 30px 0 !important;
     }
+    strong {
+        font-weight: 100 !important;
+    }
     @media screen and (max-width: 1078px) {
         height: 578px;
         .title_content {
@@ -125,6 +128,7 @@ section {
             font-family: "mark_otregular";
             font-size: 18px;
             color: #535353;
+            line-height: 1.43;
         }
     }
     @media screen and (max-width: 1078px) {
@@ -188,6 +192,7 @@ section {
             font-family: "mark_otregular";
             font-size: 18px;
             color: #535353;
+            line-height: 1.43;
         }
     }
     @media screen and (max-width: 1078px) {
@@ -219,6 +224,7 @@ section {
         font-family: 'mark_otregular';
         font-size: 18px;
         color: #535353;
+        line-height: 1.43;
     }
 }
 

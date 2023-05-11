@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 @font-face {
     font-family: 'mark_otbold';
     src: url('../assets/fonts/markot-bold-webfont.woff2') format('woff2'),
@@ -28,7 +30,6 @@ section {
 
 .section_content
 .section_content_child:first-child {
-    background: black !important;
     position: relative;
     height: 787px;
     img {
@@ -47,7 +48,7 @@ section {
             height: 199px;
             border-radius: 10px;
             padding: 0 20px !important;
-            background: #3A3A3C;
+            background: $flou-color;
             filter: opacity(62%);
         }
         h1 {
@@ -96,7 +97,7 @@ section {
         font-size: 24px;
         height: 60px;
         width: 330px;
-        background: #F09291;
+        background: $secondary-color;
         border-radius: 10px;
         border: none;
         cursor: pointer;
@@ -113,7 +114,7 @@ section {
             text-align: center;
             font-family: 'mark_otbook';
             font-weight: 500;
-            color: #47929C;
+            color: $tertiary-color;
             font-size: 40px;
             margin: 20px 0 0;
         }
@@ -123,13 +124,13 @@ section {
         h2 {
             font-family: 'mark_otregular';
             font-size: 28px;
-            color: #47929C;
+            color: $tertiary-color;
             margin: 0;
         }
         p {
             font-family: "mark_otregular";
             font-size: 18px;
-            color: #535353;
+            color: $paragraphe-color;
             line-height: 1.43;
             margin: 30px 0 0;
         }
@@ -153,7 +154,7 @@ section {
 }
 .section_content
 .section_content_child:nth-child(2n+1) {
-    background: #F0F2F2;
+    background: $background-color;
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
@@ -169,7 +170,7 @@ section {
         font-size: 24px;
         height: 60px;
         width: 330px;
-        background: #F09291;
+        background: $secondary-color;
         border-radius: 10px;
         border: none;
         cursor: pointer;
@@ -186,7 +187,7 @@ section {
             text-align: center;
             font-family: 'mark_otbook';
             font-weight: 500;
-            color: #47929C;
+            color: $tertiary-color;
             font-size: 40px;
             margin: 20px 0 0;
         }
@@ -196,7 +197,7 @@ section {
         p {
             font-family: "mark_otregular";
             font-size: 18px;
-            color: #535353;
+            color: $paragraphe-color;
             line-height: 1.43;
             margin: 30px 0 0;
         }
@@ -224,7 +225,7 @@ section {
         display: inline-block;
         font-family: "mark_otregular";
         font-size: 28px;
-        color: #47929C;
+        color: $tertiary-color;
         font-weight: bold;
     }
     li {

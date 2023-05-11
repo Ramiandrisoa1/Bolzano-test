@@ -83,23 +83,25 @@ export const Section = () => {
                     <div className={styles.section_content_child} key={row.id}>
                         <img src={row.image} alt="" />
                         <div className={styles.title_content}>
-                            <h1>{row.title}</h1>
-                            <React.Fragment>
-                                <p>
-                                    {splite(row.comment)}
-                                </p>
-                            </React.Fragment>
-                            {row.list && row.list.length > 0 &&
-                                <ul>
-                                    {row.list.map((info) => (
-                                        <React.Fragment key={info.id}>
-                                            <li>
-                                                {splite(info.information)}
-                                            </li>
-                                        </React.Fragment>
-                                    ))}
-                                </ul>}
-                            {row.info && <h2>Zzzzz your baby sleeps!</h2>}
+                            <div className={styles.info_content}>
+                                <h1>{row.title}</h1>
+                                <React.Fragment>
+                                    <p>
+                                        {splite(row.comment)}
+                                    </p>
+                                </React.Fragment>
+                                {row.list && row.list.length > 0 &&
+                                    <ul>
+                                        {row.list.map((info) => (
+                                            <React.Fragment key={info.id}>
+                                                <li>
+                                                    {splite(info.information)}
+                                                </li>
+                                            </React.Fragment>
+                                        ))}
+                                    </ul>}
+                                {row.info && <h2>Zzzzz your baby sleeps!</h2>}
+                            </div>
                             <div className={styles.button}>
                                 <button>{row.label}</button>
                             </div>

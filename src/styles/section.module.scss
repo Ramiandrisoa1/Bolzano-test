@@ -85,9 +85,10 @@ section {
 .section_content_child {
     background: #FFFFFF;
     display: flex;
+    flex-direction: column;
     width: 100%;
     img {
-        width: 50%;
+        width: 100%;
     }
     .button {
         text-align: center;
@@ -107,7 +108,7 @@ section {
         opacity: 0.5;
     }
     .title_content {
-        width: 50%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -119,8 +120,11 @@ section {
             font-size: 40px;
             margin: 20px 0 0;
         }
-        p, ul, h2 {
-            padding: 0 100px;
+        p, h2 {
+            padding: 0 30px;
+        }
+        ul {
+            padding-left: 52px;
         }
         h2 {
             font-family: 'mark_otregular';
@@ -136,31 +140,33 @@ section {
             margin: 30px 0 0;
         }
     }
-    @media screen and (max-width: 1078px) {
-        flex-direction: column !important;
+    @media screen and (min-width: 1078px) {
+        flex-direction: row;
         .title_content {
-            width: 100%;
+            width: 50%;
             padding: 0;
             p, h2 {
-                padding: 0 30px;
+                padding: 0 100px;
             }
             ul {
-                padding-left: 52px !important;
+                padding-left: 135px !important;
             }
         }
         img {
-            width: 100%;
+            width: 50%;
         }
     }
 }
 .section_content
 .section_content_child:nth-child(2n+1) {
     background: $background-color;
-    flex-direction: row-reverse;
+    flex-direction: column;
+    @media screen and (min-width: 1078px) {
+        flex-direction: row-reverse;
+    }
 }
 
 .title_content ul {
-    padding-left: 135px !important;
     margin: 30px 0;
     list-style-type: upper-alpha;
     li::marker {
@@ -179,12 +185,17 @@ section {
     }
 }
 
-@media screen and (max-width: 1078px) {
-    .section_content_child:nth-child(2) {
-        align-items: center;
+.section_content_child:nth-child(2) {
+    align-items: center;
+    background: $background-color;
+    img {
+        padding: 20px;
+        width: 90%;
+    }
+    @media screen and (min-width: 1078px) {
         img {
-            padding: 20px;
-            width: 90% !important;
+            padding: 0;
+            width: 50%;
         }
     }
 }

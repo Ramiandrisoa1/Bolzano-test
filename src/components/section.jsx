@@ -25,7 +25,7 @@ export const Section = () => {
             <div className={styles.section_content}>
                 {jsonData.sections.map((data) => (
                     <div className={styles.section_content_child} key={data.id}>
-                        <img src={require(`../assets/images/${data.image}`)} alt="" />
+                        <img src={require(`../assets/images/${data.image}`)} alt={data.image} />
                         <div className={styles.title_content}>
                             <div className={styles.info_content}>
                                 <h1>{data.title}</h1>

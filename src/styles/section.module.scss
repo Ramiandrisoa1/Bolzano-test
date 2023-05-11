@@ -31,7 +31,7 @@ section {
 .section_content
 .section_content_child:first-child {
     position: relative;
-    height: 787px;
+    height: 578px;
     img {
         height: 100%;
         width: 100% !important;
@@ -40,9 +40,10 @@ section {
     .title_content {
         align-items: center;
         position: absolute;
-        bottom: 220px;
-        right: 100px;
+        bottom: 120px;
+        right: 50%;
         width: 332px !important;
+        transform: translateX(50%);
         .info_content {
             width: 100%;
             height: 199px;
@@ -70,12 +71,12 @@ section {
     strong {
         font-weight: 100 !important;
     }
-    @media screen and (max-width: 1078px) {
-        height: 578px;
+    @media screen and (min-width: 1078px) {
+        height: 787px;
         .title_content {
-            right: 50%;
-            transform: translateX(50%);
-            bottom: 120px;
+            right: 100px;
+            bottom: 220px;
+            transform: translateX(0);
         }
     }
 }

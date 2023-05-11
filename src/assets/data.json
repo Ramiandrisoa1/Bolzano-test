@@ -1,0 +1,97 @@
+{
+    "sections" : [
+        {
+            "id": 1,
+            "title": "Your baby can be a super sleeper",
+            "comment": "Lumi's app-bases sleep coaching and tracking tools will have your baby sleeping better in just 7 days",
+            "label": "GET STARTED",
+            "image": "home-banner1-desktop.jpg"
+        },
+        {
+            "id": 2,
+            "title": "How it works",
+            "comment": "Lumi's A, B, Cs, to better Zzzzs",
+            "info": "Zzzzz your baby sleeps!",
+            "label": "GET STARTED",
+            "image": "how-it-works-desktop.jpg",
+            "list": [
+                {
+                    "id": 1,
+                    "information": "We coach. Our Pediatric sleep experts will take you step-by-step to sleep success"
+    
+                },
+                {
+                    "id": 2,
+                    "information": "You log. Record your baby's sleeps directly within the app"
+    
+                },
+                {
+                    "id": 3,
+                    "information": "We analyze. Daily and weekly sleep insight reports measure your baby's progress"
+    
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Our mission",
+            "comment": "We're on a mission to make it easy for every familly to sleep better. We apply state-of-the-art technology to science-based sleep understanding so that we can make quality, credible sleep support accessible to everyone - because every baby and their family deserve better sleep.",
+            "label": "UNLOCK BETTER SLEEP",
+            "image": "our-mission.jpg"
+        },
+        {
+            "id": 4,
+            "title": "Lumi is designed for",
+            "comment": "Every parent who wants their baby to fall asleep, stay asleep, and wake up happy in the morning. Whether you're struggling with sleep or simply making sure your're doing what's best for your family, we have you covered.",
+            "label": "GET STARTED",
+            "image": "home-banner1-desktop.jpg"
+        }
+    ],
+    
+    "questions" : [
+        {
+            "id": 1,
+            "option": "What is baby sleep training?"
+        },
+        {
+            "id": 2,
+            "option": "Does the Lumi Smart Sleep Coach app work?"
+        },
+        {
+            "id": 3,
+            "option": "I don't have time to track manually, is there an alternative?"
+        },
+        {
+            "id": 4,
+            "option": "Is sleep training sage for my baby"
+        },
+        {
+            "id": 5,
+            "option": "Are there multiple sleep training methods to choose from?"
+        },
+        {
+            "id": 6,
+            "option": "How long does it take for my baby's sleep to improve?"
+        },
+        {
+            "id": 7,
+            "option": "When can I start training my baby to sleep with the Lumi Smart Sleep Coach?"
+        },
+        {
+            "id": 8,
+            "option": "Can I grant app access to other people who care for my baby?"
+        },
+        {
+            "id": 9,
+            "option": "Is it too late to sleep train my baby?"
+        },
+        {
+            "id": 10,
+            "option": "How long will I have access?"
+        },
+        {
+            "id": 11,
+            "option": "Can I cancel my plan?"
+        }
+    ]
+}
